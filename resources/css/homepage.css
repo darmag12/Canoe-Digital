@@ -37,7 +37,7 @@ body{
 }
 
 /* Logo styles */
-.logo{
+.logo h1{
     position: absolute;
     top: 0;
     left: 0;
@@ -45,9 +45,10 @@ body{
     font-weight: black 900;
     font-style: italic;
     color: var(--primary-color);
-    font-size: 1rem;
-    padding: 1rem;
+    font-size: 2rem;
+    padding: .5rem 1rem;
 }
+
 
 .video-container{
     position: absolute;

@@ -41,11 +41,6 @@ body{
     padding: 2rem 1rem;
 }
 
-@media screen and (max-width: 550px){
-    .logo h1{
-        font-size: 2rem;
-    }
-}
 
 .menu-wrap{
     position: fixed;
