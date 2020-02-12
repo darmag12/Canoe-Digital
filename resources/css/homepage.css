@@ -178,6 +178,7 @@ body{
 }
 
 .menu-wrap .toggler:checked ~ .menu > div {
+    visibility: visible;
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -213,6 +214,7 @@ body{
 }
 
 .menu-wrap .menu > div{ 
+    visibility: hidden;
     position: relative;
     background-image: url(../images/IMG_2480.jpg);
     background-position: center;

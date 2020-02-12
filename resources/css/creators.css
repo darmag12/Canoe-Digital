@@ -143,6 +143,7 @@ body{
 }
 
 .menu-wrap .toggler:checked ~ .menu > div {
+    visibility: visible;
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
@@ -178,6 +179,7 @@ body{
 }
 
 .menu-wrap .menu > div{ 
+    visibility: hidden;
     position: relative;
     background-image: url(../images/IMG_2480.jpg);
     background-position: center;
@@ -242,8 +244,8 @@ body{
     content: "";
     position: absolute;
     top: 0;
-    left: -.4rem;
-    width: 100%;
+    left: -.3rem;
+    width: 108%;
     height: 30px;
     padding: .01rem .5rem;
     border-top-right-radius: .5rem;
@@ -298,6 +300,11 @@ video{
 .carousel-caption h5{
     text-transform: uppercase;
     font-family: var(--font-family);
+    color: var(--primary-color);
+}
+
+.carousel-indicators .active{
+    background-color: var(--primary-color);
 }
 
 
