@@ -3,13 +3,6 @@
     box-sizing: border-box;
 }
 
-a:active,a:visited, a:link{
-    text-decoration: none;
-    text-decoration-color: transparent;
-    color: var(--primary-color);
-    -moz-text-decoration-color: transparent;
-}
-
 /* main colors and fonts for the website */
 :root{
     --primary-color: #3BBA9C;
@@ -28,16 +21,15 @@ body{
     line-height: 1.5;
 }
 
-.container{
+.cont{
     width: 100%;
-    margin: 0 auto;
     position: relative;
     height: 100vh;
     overflow: hidden;
 }
 
 /* Logo styles */
-.logo{
+.logo h1{
     position: absolute;
     top: 0;
     left: 0;
@@ -45,42 +37,15 @@ body{
     font-weight: black 900;
     font-style: italic;
     color: var(--primary-color);
-    font-size: 1rem;
-    padding: 1rem;
+    font-size: 2rem;
+    padding: 2rem 1rem;
 }
 
-.video-container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 1;
+@media screen and (max-width: 550px){
+    .logo h1{
+        font-size: 2rem;
+    }
 }
-
-.video-container::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--secondary-color);
-    z-index: 3;
-    opacity: .65;
-}
-
-.video-container video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-}
-
-/* Menu  Wrap */
 
 .menu-wrap{
     position: fixed;
@@ -299,18 +264,43 @@ body{
 }
 
 /* creators styles */
-/* 
-.carousel .slide{
+
+.carousel{
     min-width: 100vw;
     min-height: 100vh;
     overflow: hidden;
+    position: relative;
+}
+
+.carousel::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    z-index: 1;
+    opacity: .65;
 }
 
 .carousel-item{
     min-width: 100%;
     min-height: 100%;
+}
+
+video{
     object-fit: cover;
-} */
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-caption h5{
+    text-transform: uppercase;
+    font-family: var(--font-family);
+}
+
+
 
 
 
