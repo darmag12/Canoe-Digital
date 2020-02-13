@@ -260,51 +260,69 @@ body{
     color: var(--secondary-color);
 }
 
-/* creators styles */
+/* Contact styles start here */
 
-.carousel{
-    min-width: 100vw;
-    min-height: 100vh;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+#contatti{
     background-color: var(--secondary-color);
-    z-index: 1;
-    opacity: .65;
-}
+    letter-spacing: 2px;
+    }
+  #contatti a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  @media (max-width: 575.98px) {
+  
+    #contatti{padding-bottom: 800px;}
+    #contatti .maps iframe{
+      width: 100%;
+      height: 450px;
+    }
+   }
+  
+  
+  @media (min-width: 576px) {
+  
+     #contatti{padding-bottom: 800px;}
+  
+     #contatti .maps iframe{
+       width: 100%;
+       height: 450px;
+     }
+   }
+  
+  @media (min-width: 768px) {
+  
+    #contatti{padding-bottom: 350px;}
+  
+    #contatti .maps iframe{
+      width: 100%;
+      height: 850px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    #contatti{padding-bottom: 200px;}
+  
+     #contatti .maps iframe{
+       width: 100%;
+       height: 700px;
+     }
+  }
+  
+  
+  #author a{
+    color: #fff;
+    text-decoration: none;
+      
+  }
 
-.carousel-item{
-    min-width: 100%;
-    min-height: 100%;
-}
+  .bg-custom{
+      height: 5%;
+      background-color: var(--primary-color);
+  }
 
-video{
-    object-fit: cover;
-    -o-object-fit: cover;
-    -ms-object-fit: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-.carousel-caption h5{
-    text-transform: uppercase;
-    font-family: var(--font-family);
-    color: var(--primary-color);
-}
-
-.carousel-indicators .active{
-    background-color: var(--primary-color);
-}
-
-
-
-
-
+  .bg-custom > div{
+      font-size: 1rem;
+  }
