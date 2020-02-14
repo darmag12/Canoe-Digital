@@ -19,6 +19,18 @@ body{
     overflow-x: hidden;
     font-size: 62.5%;
     line-height: 1.5;
+    background-image: linear-gradient(to bottom left, rgba(46, 48, 71, 0.774),rgba(60, 63, 88, 0.582)), url(../images/Bella-Corsa-1-min.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.studios-container{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* Logo styles */
@@ -253,101 +265,112 @@ body{
     color: var(--secondary-color);
 }
 
-/* Contact styles start here */
+/* studio styles start here */
 
-#contatti{
-    background-color: var(--secondary-color);
-    letter-spacing: 2px;
-    }
-  #contatti a{
-    color: #fff;
-    text-decoration: none;
+.projects-section {
+    padding: 10rem 0;
+    background-color: var(--secondary-color-ii);
   }
   
-  
-  @media (max-width: 575.98px) {
-  
-    #contatti{padding-bottom: 800px;}
-    #contatti .maps iframe{
-      width: 100%;
-      height: 450px;
-    }
-   }
-  
-  
-  @media (min-width: 576px) {
-  
-     #contatti{padding-bottom: 800px;}
-  
-     #contatti .maps iframe{
-       width: 100%;
-       height: 450px;
-     }
-   }
-  
-  @media (min-width: 768px) {
-  
-    #contatti{padding-bottom: 350px;}
-  
-    #contatti .maps iframe{
-      width: 100%;
-      height: 850px;
-    }
+  .projects-section .featured-text {
+    padding: 2rem;
   }
   
   @media (min-width: 992px) {
-    #contatti{padding-bottom: 200px;}
-  
-     #contatti .maps iframe{
-       width: 100%;
-       height: 700px;
-     }
+    .projects-section .featured-text {
+      padding: 0 0 0 2rem;
+      border-left: 0.5rem solid var(--primary-color);
+    }
   }
   
+  .projects-section .project-text {
+    padding: 3rem;
+    font-size: .8rem;
+  }
+
+  .projects-section .project-text p{
+    color: rgb(226, 226, 226);
+  }
   
-  #author a{
-    color: #fff;
-    text-decoration: none;
-      
+  @media (min-width: 992px) {
+    .projects-section .project-text {
+      padding: 5rem;
+    }
+    .projects-section .project-text hr {
+      border-color: var(--primary-color);
+      border-width: .25rem;
+      width: 30%;
+    }
   }
 
-  .bg-custom{
-      height: 5%;
-      background-color: var(--primary-color);
+  /* studio heading styles */
+  .featured-text h4{
+      font-size: 1.5rem;
+      color: #fff;
   }
 
-  .bg-custom > div{
-      font-size: 1rem;
-  }
-
-  .label-check{
-      color: var(--primary-color-ii);
-  }
-
-  .btn{
-      background-color: var(--primary-color);
-      border: none;
-      color: var(--secondary-color);
-  }
-
-  .btn:hover{
-      background-color: var(--secondary-color-ii);
-      color: var(--primary-color-ii);
-  }
-
-  .fa-instagram{
-      padding: 0 25px;
-  }
-
-  .fab{
-      color: white;
-      transition: color .4s ease;
-      -webkit-transition: color .4s ease;
-      -moz-transition: color .4s ease;
-      -ms-transition: color .4s ease;
-      -o-transition: color .4s ease;
+  .featured-text p{
+    font-size: 1rem;
+    color: rgb(226, 226, 226);
 }
 
-  .fab:hover{
+  .studio-heading{
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      text-align: center;
+      transform:translate(50%, -50%)  ;
+      -webkit-transform:translate(50%, -50%)  ;
+      -moz-transform:translate(50%, -50%)  ;
+      -ms-transform:translate(50%, -50%)  ;
+      -o-transform:translate(50%, -50%)  ;
+}
+
+.studio-heading h3{
+    font-size: 2.3rem;
+    padding: 10px 0;
+    margin: 10px 5px 0px 5px;
     color: var(--primary-color);
-  }
+    font-weight: 800;
+    text-shadow: .8px .8px .8px var(--primary-color-ii);
+
+}
+
+.studio-heading p{
+    font-size: 1.5rem;
+    color: var(--primary-color-ii);
+    padding: 20px 5px 0 5px;
+    margin: 20px 0 0 0;
+}
+
+.studio-heading .view-studios{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--primary-color-ii);
+    margin: 30px 5px -10px 5px;
+    padding: 0 5px;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+
+.studio-heading .view-studios:hover{
+    background-color: var(--secondary-color);
+    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+}
+
+.studio-heading .fa-sort-down{
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 1rem;
+    margin: 20px 0;
+
+}
+

@@ -19,6 +19,18 @@ body{
     overflow-x: hidden;
     font-size: 62.5%;
     line-height: 1.5;
+    background-image: linear-gradient(to bottom left, rgba(46, 48, 71, 0.774),rgba(60, 63, 88, 0.582)), url(../images/IMG_6248-min.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.production-container{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* Logo styles */
@@ -253,101 +265,18 @@ body{
     color: var(--secondary-color);
 }
 
-/* Contact styles start here */
-
-#contatti{
-    background-color: var(--secondary-color);
-    letter-spacing: 2px;
-    }
-  #contatti a{
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  
-  @media (max-width: 575.98px) {
-  
-    #contatti{padding-bottom: 800px;}
-    #contatti .maps iframe{
-      width: 100%;
-      height: 450px;
-    }
-   }
-  
-  
-  @media (min-width: 576px) {
-  
-     #contatti{padding-bottom: 800px;}
-  
-     #contatti .maps iframe{
-       width: 100%;
-       height: 450px;
-     }
-   }
-  
-  @media (min-width: 768px) {
-  
-    #contatti{padding-bottom: 350px;}
-  
-    #contatti .maps iframe{
-      width: 100%;
-      height: 850px;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    #contatti{padding-bottom: 200px;}
-  
-     #contatti .maps iframe{
-       width: 100%;
-       height: 700px;
-     }
-  }
-  
-  
-  #author a{
-    color: #fff;
-    text-decoration: none;
-      
-  }
-
-  .bg-custom{
-      height: 5%;
-      background-color: var(--primary-color);
-  }
-
-  .bg-custom > div{
-      font-size: 1rem;
-  }
-
-  .label-check{
-      color: var(--primary-color-ii);
-  }
-
-  .btn{
-      background-color: var(--primary-color);
-      border: none;
-      color: var(--secondary-color);
-  }
-
-  .btn:hover{
-      background-color: var(--secondary-color-ii);
-      color: var(--primary-color-ii);
-  }
-
-  .fa-instagram{
-      padding: 0 25px;
-  }
-
-  .fab{
-      color: white;
-      transition: color .4s ease;
-      -webkit-transition: color .4s ease;
-      -moz-transition: color .4s ease;
-      -ms-transition: color .4s ease;
-      -o-transition: color .4s ease;
+.postprod-container{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    text-align: center;
 }
 
-  .fab:hover{
+.postprod-container a{
+    text-decoration: none;
     color: var(--primary-color);
-  }
+    font-family: var(--font-family);
+    font-size: 2.5rem;
+}
+

@@ -88,7 +88,7 @@ body{
     top: 0;
     right: 0;
     margin: 1.5rem;
-    z-index: 2;
+    z-index: 3;
 }
 
 .menu-wrap .toggler{
@@ -223,7 +223,7 @@ body{
 .menu-wrap .menu > div{
     opacity: 0;
     position: relative;
-    background-image: url(../images/IMG_2480.jpg);
+    background-image: url(../images/IMG_2480-min.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -312,19 +312,27 @@ body{
     color: var(--secondary-color);
 }
 
-/* creators styles */
-/* 
-.carousel .slide{
-    min-width: 100vw;
-    min-height: 100vh;
-    overflow: hidden;
+.home-container{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    text-align: center;
+    z-index: 2;
 }
 
-.carousel-item{
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-} */
+.home-container a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 400px){
+    .postprod-container a{
+        font-size: 2rem;
+    }
+}
 
 
 

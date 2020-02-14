@@ -21,7 +21,7 @@ body{
     line-height: 1.5;
 }
 
-.cont{
+.creators-container{
     width: 100%;
     position: relative;
     height: 100vh;
@@ -176,7 +176,7 @@ body{
 .menu-wrap .menu > div{ 
     visibility: hidden;
     position: relative;
-    background-image: url(../images/IMG_2480.jpg);
+    background-image: url(../images/IMG_2480-min.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
