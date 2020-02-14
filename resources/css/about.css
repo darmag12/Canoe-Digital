@@ -16,7 +16,7 @@
 
 body{
     font-family: var(--font-family);
-    overflow-x: hidden;
+    overflow: hidden;
     font-size: 62.5%;
     line-height: 1.5;
     background-image: linear-gradient(to bottom left, rgba(46, 48, 71, 0.74),rgba(60, 63, 88, 0.74)), url(../images/IMG_1564-min.jpg);
