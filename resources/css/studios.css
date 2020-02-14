@@ -22,11 +22,19 @@ body{
     overflow-x: hidden;
     font-size: 62.5%;
     line-height: 1.5;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(to bottom left, rgba(46, 48, 71, 0.774),rgba(60, 63, 88, 0.582)), url(../images/Bella-Corsa-1-min.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
 }
 
 .studios-container{
@@ -339,11 +347,27 @@ body{
 
 }
 
+@media screen and (max-width: 600px){
+    .studio-heading h3{
+        font-size: 2rem;
+        margin: 20px 5px -20px 5px;
+    
+    }
+}
+
 .studio-heading p{
     font-size: 1.5rem;
     color: var(--primary-color-ii);
     padding: 20px 5px 0 5px;
     margin: 20px 0 0 0;
+}
+
+@media screen and (max-width: 600px){
+    .studio-heading p{
+        font-size: 1.1rem;
+        margin: 10px 5px -20px 5px;
+    
+    }
 }
 
 .studio-heading .view-studios{
@@ -358,6 +382,14 @@ body{
     -moz-transition: all .4s ease;
     -ms-transition: all .4s ease;
     -o-transition: all .4s ease;
+}
+
+@media screen and (max-width: 600px){
+    .studio-heading .view-studios{
+        font-size: 1.1rem;
+        margin: 30px 5px -50px 5px;
+        font-size: .9rem;
+    }
 }
 
 .studio-heading .view-studios:hover{

@@ -335,10 +335,11 @@ body{
       color: var(--primary-color-ii);
   }
 
-  .btn a:hover{
-    background-color: var(--secondary-color-ii);
-    color: var(--primary-color-ii);
-}
+  .download-btn{
+    margin: 20px 0;
+  }
+
+
 
   .fa-instagram{
       padding: 0 25px;
