@@ -150,7 +150,6 @@ body{
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transition-duration: 0.5s;
-    /* background-color: var(--primary-color); */
 }
 
 .menu-wrap .toggler:checked ~ .menu > div > div{
@@ -275,7 +274,7 @@ body{
 
 .postprod-container a{
     text-decoration: none;
-    color: var(--primary-color);
+    color: rgb(219, 219, 219);
     font-family: var(--font-family);
     font-size: 2.5rem;
 }

@@ -323,10 +323,18 @@ body{
 
 .home-container a{
     text-decoration: none;
-    color: var(--primary-color);
+    color: rgb(219, 219, 219);
+    font-weight: 900;
     font-family: var(--font-family);
     font-size: 3rem;
 }
+
+@media screen and (max-width: 400px){
+    .home-container a{
+        font-size: 2rem;
+    }
+}
+
 
 @media screen and (max-width: 400px){
     .postprod-container a{

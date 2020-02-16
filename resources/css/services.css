@@ -394,10 +394,10 @@ body::before{
 	font-weight: 400;
 	margin-bottom: 15px;
    text-transform: capitalize;
-   color: var(--primary-color-ii);
+   color: rgb(224, 224, 224);
 }
 .single-service p {
 	font-size: 15px;
    line-height: 1.8;
-   color: var(--primary-color);
+   color: rgb(219, 219, 219);
 }
