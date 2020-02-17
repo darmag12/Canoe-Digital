@@ -3,15 +3,22 @@
     box-sizing: border-box;
 }
 
+a:active,a:visited, a:link{
+    text-decoration: none;
+    text-decoration-color: transparent;
+    color: var(--primary-color);
+    -moz-text-decoration-color: transparent;
+}
+
 /* main colors and fonts for the website */
 :root{
     --primary-color: #3BBA9C;
     --primary-color-ii: #57f1b1;
     --secondary-color: #2E3047;
     --secondary-color-ii: #3C3F58;
-    --font-family:  'Exo', sans-serif;
+    --font-family: 'Oswald', sans-serif;
+    --main-color: rgb(228, 228, 228);
 }
-
 /* all the styles start here */
 
 body{
@@ -39,9 +46,9 @@ body{
     top: 0;
     left: 0;
     z-index: 2;
-    font-weight: black 900;
+    font-weight: 500;
     font-style: italic;
-    color: var(--primary-color);
+    color: var(--main-color);
     font-size: 2rem;
     padding: 2rem 1rem;
 }
@@ -86,7 +93,7 @@ body{
     position: relative;
     width: 100%;
     height: 1.5px;
-    background-color: var(--primary-color-ii);
+    background-color: var(--main-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,7 +230,7 @@ body{
     list-style: none;
     color: #fff;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: .7rem;
     z-index: 2;
 
 }
@@ -245,8 +252,8 @@ body{
     top: 0;
     left: -.3rem;
     width: 108%;
-    height: 30px;
-    padding: .01rem .5rem;
+    height: 35px;
+    padding: .1rem .5rem;
     border-top-right-radius: .5rem;
     background-color: var(--primary-color-ii);
     transform: scaleX(0);
